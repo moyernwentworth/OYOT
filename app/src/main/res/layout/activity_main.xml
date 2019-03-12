@@ -7,7 +7,7 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
-    tools:openDrawer="start">
+    tools:openDrawer="">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,16 +26,23 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/new_post"
-                android:layout_width="wrap_content"
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/mainBottomNav"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end|bottom"
-                android:layout_margin="16dp"
-                android:src="@mipmap/add_post" />
+                android:layout_gravity="bottom"
+                app:itemBackground="@color/colorAccent"
+                app:menu="@menu/bottom_menu" />
+
+            <FrameLayout
+                android:id="@+id/main_container"
+                android:layout_width="wrap_content"
+                android:layout_height="612dp">
+
+            </FrameLayout>
         </FrameLayout>
 
 

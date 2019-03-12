@@ -89,7 +89,7 @@ public class SetupActivity extends AppCompatActivity {
                 String user_email=setupEmail.getText().toString();
 
 
-                if (!TextUtils.isEmpty(user_name)){  /////check if image is empty;
+                if (!TextUtils.isEmpty(user_name) && !TextUtils.isEmpty(user_email)){  /////check if image is empty;
 
                     String user_id=firebaseAuth.getCurrentUser().getUid();
 
@@ -105,7 +105,7 @@ public class SetupActivity extends AppCompatActivity {
 //                                Toast.makeText(SetupActivity.this, "error: "+error,Toast.LENGTH_LONG).show();
 //                            }
 //
-//                        }
+//                        }i
 //                    });
 
                     ///////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ public class SetupActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
 
                             if (task.isSuccessful()){
-                                Toast.makeText(SetupActivity.this, "Profile Save ",Toast.LENGTH_LONG).show();
+                                Toast.makeText(SetupActivity.this, "Profile Saved ",Toast.LENGTH_LONG).show();
                                 Intent mainIntent= new Intent(SetupActivity.this,MainActivity.class);
                                 startActivity(mainIntent);
                                 finish();
@@ -134,6 +134,8 @@ public class SetupActivity extends AppCompatActivity {
                         }
                     });
                     ////////////////////////////////////////////////////////////////////////
+                }else{
+                    Toast.makeText(SetupActivity.this, "Profile Saved ",Toast.LENGTH_LONG).show();
                 }
 
             }
