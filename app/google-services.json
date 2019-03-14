@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "250724040661",
+    "firebase_url": "https://oyot-9791f.firebaseio.com",
+    "project_id": "oyot-9791f",
+    "storage_bucket": "oyot-9791f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250724040661:android:4d2d17c7777d28d9",
+        "android_client_info": {
+          "package_name": "tech.oyot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250724040661-hct38h9nasb8va6ggluoqgfhsfhvvvhd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.oyot",
+            "certificate_hash": "ef1b349a756f4db8600db7b568746b806d8898f3"
+          }
+        },
+        {
+          "client_id": "250724040661-vq4rmdj2b2mtq8uu066lk60qo16bq11i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.oyot",
+            "certificate_hash": "7a81486051963cfb0c0be0ca6f5fbcc3edf4c1fb"
+          }
+        },
+        {
+          "client_id": "250724040661-t00755bm0khtbt2eqlgi0ra9cqngnafl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWckmMEezB_R5ekFsqeqcGVfw2_9NfBHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250724040661-t00755bm0khtbt2eqlgi0ra9cqngnafl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
